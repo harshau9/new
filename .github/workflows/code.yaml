@@ -7,7 +7,6 @@ on:
     branches:
       - master
 
-
 # functions(what needs to be done)
 jobs:
   build:
@@ -20,7 +19,7 @@ jobs:
     - name: Intall Node 16
       uses: actions/setup-node@v3
       with:
-        node-version:16.x
+        node-version: 16.x
     - name: Intall dependencies
       run: npm i
     - name: build project
